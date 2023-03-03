@@ -7,7 +7,7 @@ Welcome to the IFSC Code Checker Project! This project is designed to help indiv
 - Easy-to-use interface
 - Comprehensive database
 - Quick search
-- Razorpay API implementation for secure transactions
+- Razorpay API implementation
 - Mobile-responsive design
 - Built with Node.js, Express, Bootstrap, and EJS
 
