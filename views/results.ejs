@@ -1,0 +1,23 @@
+<%- include("partials/header") -%>
+  <body class="text-center">
+    
+<main class="form-signin w-100 m-auto">
+    <div>
+        <h3 style="color:#2B3467">Branch Details : </h3>
+        <% if (responseCode!=404){ %>
+        <div class="p-1" style="border-radius: 12px 12px 0 0;background-color: #3F72AF; border: 2px solid #2B3467;"><p style="color: #1B262C ; font-weight: 600;">Bank Name : <%= webBankName %></p></div>
+        <div class="p-1" style="background-color: #DBE2EF; border: 2px solid #2B3467;"><p style="color: #1B262C ; font-weight: 600;">Bank Address : <%= webBankAddress %></p></div>    
+        <div class="p-1" style="background-color: #3F72AF; border: 2px solid #2B3467;"><p style="color: #1B262C ; font-weight: 600;">City : <%= webBankCity %></p></div>    
+        <div class="p-1" style="border-radius: 0 0 12px 12px;background-color: #DBE2EF; border: 2px solid #2B3467;"><p style="color: #1B262C ; font-weight: 600;">State : <%= webBankState %></p></div>    
+        <% } else{ %>
+        <div class="p-1" style="border-radius: 12px;background-color: red; border: 2px solid #2B3467;"><p style="color: #1B262C ; font-weight: 600;">Wrong IFSC Code Entered!</p></div>
+        <% } %>
+    </div>
+  <a href="/"><button class="w-100 btn btn-warning mt-3">« Check Another</button></a>
+  <p class="mt-5 mb-2"><a href="https://bit.ly/jashgro"><button class="btn">&copy;JashGro</button></a></p>
+  <a href="https://github.com/BlackHatDevX/ifsc-checker"><button class="btn btn-sm btn-outline-secondary">Source Code <i class="fa fa-github"></i></button></a>
+</main>
+
+<%- include("partials/footer") -%>
+
+

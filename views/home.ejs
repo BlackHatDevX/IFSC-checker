@@ -1,0 +1,22 @@
+<%- include("partials/header") -%>
+  <body class="text-center">
+    
+<main class="form-signin w-100 m-auto">
+  <form action="/" method="post">
+    <div class="alert alert-success show" role="alert">
+      <strong>Effortlessly validate IFSC codes for Indian banks with our tool ❤</strong>
+    </div>    
+    <img class="mb-4" src="https://cdn-icons-png.flaticon.com/512/2910/2910254.png" alt="" width="auto" height="100">
+
+    <div class="form-floating">
+      <input type="text" step="any" autocomplete="off" class="form-control middle removeScroller" maxlength="11" name="ifsc" id="floatingInput" placeholder="Family ID" required>
+      <label for="floatingInput">Bank IFSC</label>
+    </div>
+  
+    <button class="w-100 btn btn-lg btn-warning" type="submit">Check Details!</button>
+  </form>
+  <p class="mt-5 mb-2"><a href="https://bit.ly/jashgro"><button class="btn">&copy;JashGro</button></a></p>
+  <a href="https://github.com/BlackHatDevX/ifsc-checker"><button class="btn btn-sm btn-outline-secondary">Source Code <i class="fa fa-github"></i></button></a>
+</main>
+
+<%- include("partials/footer") -%>
