@@ -13,7 +13,7 @@ Welcome to the IFSC Code Checker Project! This project is designed to help indiv
 
 ## Demo
 
-You can see a live demo of IFSC Checker at [https://powerful-gold-jaguar.cyclic.app/](https://powerful-gold-jaguar.cyclic.app/). Feel free to test it out and provide feedback.
+You can see a live demo of IFSC Checker at [http://bit.ly/ifsc-checker-jash](http://bit.ly/ifsc-checker-jash). Feel free to test it out and provide feedback.
 
 ## Usage
 
