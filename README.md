@@ -25,6 +25,10 @@ node server.js
 ```
 This will start the server on port 3000. You can then access the calculator by visiting on your webserver or http://localhost:3000 in your web browser.
 
+## Preview
+![work-1](https://user-images.githubusercontent.com/91268029/227580111-197d799f-dfae-4b26-8312-f9842383babd.png)
+
+
 ## Developer
 
 This project was developed by JashGro. If you have any questions or comments, feel free to contact me at http://bit.ly/jashgro.
