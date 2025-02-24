@@ -13,7 +13,7 @@ Welcome to the IFSC Code Checker Project! This project is designed to help indiv
 
 ## Demo
 
-You can see a live demo of IFSC Checker at [http://bit.ly/ifsc-checker-jash](http://bit.ly/ifsc-checker-jash). Feel free to test it out and provide feedback.
+You can see a live demo of IFSC Checker at [https://ifsc-checker.onrender.com/](https://ifsc-checker.onrender.com/). Feel free to test it out and provide feedback.
 
 ## Usage
 
@@ -23,11 +23,12 @@ To use the IFSC Checker in your own project, simply clone or download the reposi
 npm install express body-parser ejs
 node server.js
 ```
+
 This will start the server on port 3000. You can then access the calculator by visiting on your webserver or http://localhost:3000 in your web browser.
 
 ## Preview
-![work-1](https://user-images.githubusercontent.com/91268029/227580111-197d799f-dfae-4b26-8312-f9842383babd.png)
 
+![work-1](https://user-images.githubusercontent.com/91268029/227580111-197d799f-dfae-4b26-8312-f9842383babd.png)
 
 ## Developer
 
