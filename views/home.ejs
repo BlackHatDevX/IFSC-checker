@@ -1,22 +1,70 @@
 <%- include("partials/header") -%>
-  <body class="text-center">
-    
-<main class="form-signin w-100 m-auto">
-  <form action="/" method="post">
-    <div class="alert alert-success show" role="alert">
-      <strong>Effortlessly validate IFSC codes for Indian banks with our tool ❤</strong>
-    </div>    
-    <img class="mb-4" src="https://cdn-icons-png.flaticon.com/512/2910/2910254.png" alt="" width="auto" height="100">
+<body class="text-center">
+  <main class="form-signin w-100 m-auto">
+    <div class="card shadow-lg border-0">
+      <div class="card-body p-5">
+        <div class="welcome-banner mb-4">
+          <div class="icon-wrapper mb-3">
+            <img
+              src="2910254.png"
+              alt="Bank Icon"
+              class="img-fluid"
+              style="max-height: 80px"
+            />
+          </div>
+          <h1 class="h4 text-primary mb-3">IFSC Code Validator</h1>
+          <p class="text-muted">
+            Effortlessly validate IFSC codes for Indian banks
+          </p>
+        </div>
 
-    <div class="form-floating">
-      <input type="text" step="any" autocomplete="off" class="form-control middle removeScroller" maxlength="11" name="ifsc" id="floatingInput" placeholder="Family ID" required>
-      <label for="floatingInput">Bank IFSC</label>
+        <form action="/" method="post" class="mt-4">
+          <div class="form-floating mb-4">
+            <input
+              type="text"
+              class="form-control form-control-lg border-0"
+              maxlength="11"
+              name="ifsc"
+              id="floatingInput"
+              placeholder="Enter IFSC Code"
+              required
+              autocomplete="off"
+              style="border-radius: 12px"
+            />
+            <label for="floatingInput" class="text-muted"
+              >Enter IFSC Code</label
+            >
+          </div>
+
+          <button
+            class="btn btn-primary btn-lg w-100 mb-3"
+            type="submit"
+            style="border-radius: 12px"
+          >
+            <i class="fa-brands fa-searchengin"></i> Validate IFSC
+          </button>
+        </form>
+      </div>
     </div>
-  
-    <button class="w-100 btn btn-lg btn-warning" type="submit">Check Details!</button>
-  </form>
-  <p class="mt-5 mb-2"><a href="https://bit.ly/jashgro"><button class="btn">&copy;JashGro</button></a></p>
-  <a href="https://github.com/BlackHatDevX/ifsc-checker"><button class="btn btn-sm btn-outline-secondary">Source Code <i class="fa fa-github"></i></button></a>
-</main>
 
+    <footer class="mt-4">
+      <div class="d-flex justify-content-center align-items-center gap-3">
+        <a
+          href="https://bit.ly/jashgro"
+          class="text-decoration-none text-muted"
+        >
+          <small>&copy; JashGro</small>
+        </a>
+        <span class="text-muted">|</span>
+        <a
+          href="https://github.com/BlackHatDevX/ifsc-checker"
+          class="text-decoration-none text-muted d-flex align-items-center gap-2"
+        >
+          <small>Source Code</small>
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </footer>
+  </main>
+</body>
 <%- include("partials/footer") -%>

@@ -1,23 +1,62 @@
 <%- include("partials/header") -%>
-  <body class="text-center">
-    
-<main class="form-signin w-100 m-auto">
-    <div>
-        <h3 style="color:#2B3467">Branch Details : </h3>
-        <% if (responseCode!=404){ %>
-        <div class="p-1" style="border-radius: 12px 12px 0 0;background-color: #3F72AF; border: 2px solid #2B3467;"><p style="color: #1B262C ; font-weight: 600;">Bank Name : <%= webBankName %></p></div>
-        <div class="p-1" style="background-color: #DBE2EF; border: 2px solid #2B3467;"><p style="color: #1B262C ; font-weight: 600;">Bank Address : <%= webBankAddress %></p></div>    
-        <div class="p-1" style="background-color: #3F72AF; border: 2px solid #2B3467;"><p style="color: #1B262C ; font-weight: 600;">City : <%= webBankCity %></p></div>    
-        <div class="p-1" style="border-radius: 0 0 12px 12px;background-color: #DBE2EF; border: 2px solid #2B3467;"><p style="color: #1B262C ; font-weight: 600;">State : <%= webBankState %></p></div>    
-        <% } else{ %>
-        <div class="p-1" style="border-radius: 12px;background-color: red; border: 2px solid #2B3467;"><p style="color: #1B262C ; font-weight: 600;">Wrong IFSC Code Entered!</p></div>
+
+<body class="text-center">
+  <main class="form-signin container my-5">
+    <section class="bank-details">
+      <div class="result-card">
+        <div class="result-header">
+          <img src="/2910254.png" alt="Bank Icon" class="bank-icon mb-3" />
+          <h2 class="result-title">Branch Details</h2>
+        </div>
+
+        <% if (responseCode != 404) { %>
+        <div class="result-content">
+          <div class="result-item">
+            <span class="result-label">Bank Name</span>
+            <span class="result-value text-break"><%= webBankName %></span>
+          </div>
+          <div class="result-item">
+            <span class="result-label">Address</span>
+            <span class="result-value text-break"><%= webBankAddress %></span>
+          </div>
+          <div class="result-item">
+            <span class="result-label">City</span>
+            <span class="result-value text-break"><%= webBankCity %></span>
+          </div>
+          <div class="result-item">
+            <span class="result-label">State</span>
+            <span class="result-value text-break"><%= webBankState %></span>
+          </div>
+        </div>
+        <% } else { %>
+        <div class="error-message">
+          <i class="fas fa-exclamation-circle"></i>
+          <p>Wrong IFSC Code Entered!</p>
+        </div>
         <% } %>
-    </div>
-  <a href="/"><button class="w-100 btn btn-warning mt-3">« Check Another</button></a>
-  <p class="mt-5 mb-2"><a href="https://bit.ly/jashgro"><button class="btn">&copy;JashGro</button></a></p>
-  <a href="https://github.com/BlackHatDevX/ifsc-checker"><button class="btn btn-sm btn-outline-secondary">Source Code <i class="fa fa-github"></i></button></a>
-</main>
+      </div>
+
+      <div class="mt-4">
+        <a href="/" class="back-button">
+          <i class="fas fa-chevron-left"></i> Check Another
+        </a>
+      </div>
+
+      <footer class="mt-5">
+        <div class="footer-links">
+          <a href="https://bit.ly/jashgro" class="footer-link">
+            &copy; JashGro
+          </a>
+          <a
+            href="https://github.com/BlackHatDevX/ifsc-checker"
+            class="footer-link"
+          >
+            <i class="fab fa-github"></i> Source Code
+          </a>
+        </div>
+      </footer>
+    </section>
+  </main>
+</body>
 
 <%- include("partials/footer") -%>
-
-
